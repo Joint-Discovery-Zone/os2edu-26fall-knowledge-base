@@ -12,7 +12,6 @@ main:
 
         - name: Push main to GitHub
           image: tencentcom/git-sync:v1.3.0
-          # Replace this URL with the actual CNB KeyStore file URL; see README.md.
           imports:
             - https://cnb.cool/Joint-Discovery-Zone/secrets/-/blob/main/sync-to-github-jeffrey-gong.yml
           settings:
