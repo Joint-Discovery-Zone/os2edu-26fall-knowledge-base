@@ -1,0 +1,43 @@
+[课程主页](https://web.archive.org/web/20241219154359/https://cs61c.org/fa24/) | [课程视频](https://www.bilibili.com/video/BV1gyM26ME4u) | [CSDIY](https://csdiy.wiki/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/CS61C/)
+
+课程 Google Drive 资源：
+- Lecture 0: Intro, Great Ideas
+- Lecture 1: Number Representation
+- Lecture 2: C Intro - Basics
+- Lecture 3: C Intro - Pointers, Arrays, Strings
+- [Lecture 4: C Memory Management](https://drive.google.com/drive/folders/11ZhcUSHW-2DsMnifH-mmXmUfzQYEODhx)
+- [Lecture 5: C Generics](https://drive.google.com/drive/folders/13JawBSfoEgiK1hwFfA2I96JnDJ1YPecN)
+- [Lecture 6: Floating Point](https://drive.google.com/drive/folders/13wbHM-s805rlYlX0lchWDmWIokOSWDnM)
+- [Lecture 7: RISC-V Basics](https://drive.google.com/drive/folders/14K7HrIdXjpoX_Ru8D0E-rsQlTQ3QqY_m)
+- [Lecture 8: RISC-V Data Transfer](https://drive.google.com/drive/folders/152lDxzPxUJImEL68fRtMyrMm54SXZOT-)
+- [Lecture 9: RISC-V Decision Making](https://drive.google.com/drive/folders/1-X43KxE1TJ3OEH-YYGefcp1TBAwVlXqi)
+- [Lecture 10: RISC-V Procedures](https://drive.google.com/drive/folders/106FA5NrMrs8IBBVRORoZWBMorfuTvAO2)
+- [Lecture 11: RISC-V Instruction Formats I](https://drive.google.com/drive/folders/10SPfjKtxSpraSntZE_vQByyoh5Gd0-HP)
+- [Lecture 12: RISC-V Instruction Formats II](https://drive.google.com/drive/folders/10fjsjTKH9VXLlGSEvTEQNK6G3JwPjQmQ)
+- [Lecture 13: Compiler, Assembler, Linker, Loader](https://drive.google.com/drive/folders/115YuiFPhlcOdYWdRBeq3DIAv8YxprNLf)
+- [Lecture 14: Intro to SDS](https://drive.google.com/drive/folders/11fX8YwQ_5xVAWCL6AVWz225fQsNALaeS)
+- [Lecture 15: Combinational Logic](https://drive.google.com/drive/folders/11weiDZUwM_7yulAoY-nCHX9H55pSgypP)
+- [Lecture 16: State and Registers](https://drive.google.com/drive/folders/12mMwOChF-Ig568uNLVsYd9qKsLwQK_mQ)
+- [Lecture 17: Combinational Blocks: MUX and ALU](https://drive.google.com/drive/folders/12wcB3OcfQkl_H0Pqtf-yy-ZOXOXWOfZ1)
+- [Lecture 18: RISC-V Single-Cycle Datapath I](https://drive.google.com/drive/folders/13muQdB4ZLGePeVZfQgr8UEcSn6xejZ9r)
+- [Lecture 19: RISC-V Single-Cycle Datapath II](https://drive.google.com/drive/folders/14MJETtEzaSD6KJ49wibuNNu_XFnH_Za9)
+- [Lecture 20: RISC-V Single-Cycle Control (10-11 AM) + Midterm (8-10 PM)](https://drive.google.com/drive/folders/10ZdiWlCu2BgohapcbdebmKMJXltWckP0)
+- [Lecture 21~23: RISC-V 5-Stage Pipeline](https://drive.google.com/drive/folders/1zXM6pcfPZW3OnW1sSMiLZVq2G6rFGYgX)
+- [Lecture 24: Caches I](https://drive.google.com/drive/folders/15hZdfiORsnN0J-ErW5f9QMylbwThfvvn)
+- [Lecture 25: Caches II](https://drive.google.com/drive/folders/16Ew7EvEIidX4dhskyAD9yKNp_Tbsl3hI)
+- [Lecture 26: Caches III](https://drive.google.com/drive/folders/16V8NepKHplLNvwZjf1wQ24pWueXU7uXL)
+- [Lecture 27: Caches IV](https://drive.google.com/drive/folders/16g5faLrGyhwPW8qTYTI3LKVguCdDpDGr)
+- [Lecture 28: Parallelism I - Intro](https://drive.google.com/drive/folders/18BIBzQz3_HPPTxY1lMpDm6If3NDyeKlG)
+- Lecture 29: Parallelism II - SIMD
+- Lecture 30: Parallelism III - TLP
+- Lecture 31: Parallelism IV - Concurrency
+- [Lecture 32: Parallelism V - Distributed Computing and MapReduce](https://drive.google.com/drive/folders/1033Nz2MtGyOiyDeWWeqU8Dr03tPlGI3u)
+- [Lecture 33: Virtual Memory I](https://drive.google.com/drive/folders/1dyMmANNDJvrxR_0j8omZPhIqc_f1Cn0K)
+- [Lecture 34: Virtual Memory II](https://drive.google.com/drive/folders/1WWiEtcHCrSura5Stz0Q0Ul5AXHak0SHe)
+- [Lecture 35: Guest Lecture: Applications of Parallel Computers (Aydin Buluc)](https://drive.google.com/drive/folders/19zRUZtp3j7usQ8Kt9pWSDOtxHNg0rGSZ)
+- Lecture 36: Guest Lecture
+- [[HW Only] Lecture 37: I/O, Warehouse-Scale Computing](https://drive.google.com/drive/folders/18mC1dom8I3t5PSyWDXrJRkhFKzyMLsV3)
+- [[HW Only] Lecture 38: ECC, RAID](https://drive.google.com/drive/folders/19ZebqSxONYpYRPoXLHoZYlYXt1JTgiGI)
+- Lecture 39: Guest Lecture
+- Lecture 40: Summary, What's Next?
+
