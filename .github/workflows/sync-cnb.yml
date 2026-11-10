@@ -1,0 +1,54 @@
+name: Sync to CNB
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-to-cnb-main
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.repository == 'Joint-Discovery-Zone/os2edu-26fall-knowledge-base' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check CNB configuration
+        shell: bash
+        env:
+          CNB_REPO_URL: ${{ vars.CNB_REPO_URL }}
+          CNB_ACCESS_TOKEN: ${{ secrets.CNB_ACCESS_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [[ ! "$CNB_REPO_URL" =~ ^https://cnb\.cool/[A-Za-z0-9._/-]+\.git$ ]]; then
+            echo '::error::Set the CNB_REPO_URL repository variable to https://cnb.cool/<group>/<repo>.git (without credentials).'
+            exit 1
+          fi
+          if [[ -z "$CNB_ACCESS_TOKEN" ]]; then
+            echo '::error::Set the CNB_ACCESS_TOKEN repository secret to a CNB access token with repository write permission.'
+            exit 1
+          fi
+
+      - name: Checkout main with full history
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Push main to CNB
+        uses: docker://tencentcom/git-sync:v1.3.0
+        env:
+          PLUGIN_TARGET_URL: ${{ vars.CNB_REPO_URL }}
+          PLUGIN_AUTH_TYPE: https
+          PLUGIN_USERNAME: cnb
+          PLUGIN_PASSWORD: ${{ secrets.CNB_ACCESS_TOKEN }}
+          PLUGIN_BRANCH: main
+          PLUGIN_SYNC_MODE: push
+          # Omit PLUGIN_FORCE: v1.3.0 treats even "false" as --force.

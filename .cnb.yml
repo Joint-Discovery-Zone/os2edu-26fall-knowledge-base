@@ -1,0 +1,25 @@
+main:
+  push:
+    - name: Sync main to GitHub
+      stages:
+        - name: Prepare main with full history
+          script: |
+            set -eu
+            if [ "$(git rev-parse --is-shallow-repository)" = "true" ]; then
+              git fetch --unshallow origin
+            fi
+            git checkout -B main "$CNB_COMMIT"
+
+        - name: Push main to GitHub
+          image: tencentcom/git-sync:v1.3.0
+          # Replace this URL with the actual CNB KeyStore file URL; see README.md.
+          imports:
+            - https://cnb.cool/Joint-Discovery-Zone/secrets/-/blob/main/sync-to-github-jeffrey-gong.yml
+          settings:
+            target_url: https://github.com/Joint-Discovery-Zone/os2edu-26fall-knowledge-base.git
+            auth_type: https
+            username: ${GIT_USERNAME}
+            password: ${GIT_ACCESS_TOKEN}
+            branch: main
+            sync_mode: push
+            # Omit force: v1.3.0 treats even "false" as --force.
